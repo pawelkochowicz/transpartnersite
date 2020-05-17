@@ -1,23 +1,27 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body {
-  color: $yellow;
-  background: $violet;
-}
 
-.nav__logo {
-  width: 200px;
-  height: auto;
+.nav {
+  position:fixed; 
+  width:100%; 
+  z-index:9990; 
+  background-color:#fff;
+  &__logo {
+    position:fixed; 
+    width:200px; 
+    margin-left:4.75%; 
+  }
 }
 
 .header__image {
