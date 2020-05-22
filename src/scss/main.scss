@@ -63,23 +63,29 @@ body {
   &__container {
     display: flex;
     flex-direction: row;
+    height: 100px;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
   &__title {
     display: flex;
     height: 100px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    color: white;
+    font-weight: 300;
     &--first {
-      width: 45.5%;
+      width: 50%;
       height: 100px;
-      background-color: #F4497A;
-align-items: flex-start;
+      background-color: $red;
     }
     &--second {
-      width: 45.5%;
+      width: 50%;
       height: 100px;
-      background-color: #0076FF;
-      align-items: flex-end;
+      background-color: $blue;
     }
   }
   &__image {
@@ -87,6 +93,18 @@ align-items: flex-start;
     width: 100%;
   }
   &__slant {
-  height: 100px;
+    height: 100px;
+    margin-top: -16px;
+  }
+}
+
+.offer {
+  &__types {
+    display: flex;
+    flex-direction: row;
+  }
+  &__features {
+    display: flex;
+    flex-direction: row;
   }
 }
