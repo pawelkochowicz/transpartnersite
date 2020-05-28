@@ -105,7 +105,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     margin: 5vw 4vw 0 4vw;
   }
   &__list {
@@ -123,6 +122,11 @@ body {
     flex-direction: column;
     width: 30%;
   }
+  &__image {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+  }
 }
 
 .features {
@@ -130,10 +134,14 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  &__feature {
-    display: flex;
-  }
-  &__image {
-    align-self: center;
-  }
+  text-align: center;
 }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+    width: 20vw;
+    height: 12vw;
+    background-color: #e4e9ec;
+  }
