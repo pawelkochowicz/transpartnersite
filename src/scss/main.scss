@@ -127,6 +127,10 @@ body {
     width: 120px;
     height: 120px;
     align-self: center;
+    &:hover {
+      transform: scale(1.15);
+      transition: 0.2s;
+    }
   }
 }
 
@@ -147,6 +151,10 @@ body {
   width: 20vw;
   height: 12vw;
   background-color: #e4e9ec;
+  &:hover {
+    transform: scale(1.15);
+    transition: 0.2s;
+  }
 }
 
 .about {
@@ -184,19 +192,18 @@ body {
   }
 }
 
-
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-    width: 100%;
+  width: 100%;
   height: 30vw;
   color: white;
   font-size: 1.5rem;
-  background: rgb(0,118,255);
-  background: linear-gradient(34deg, rgba(0,118,255,1) 11%, rgba(223,77,84,1) 77%);
+  background: rgb(0, 118, 255);
+  background: linear-gradient(34deg, rgba(0, 118, 255, 1) 11%, rgba(223, 77, 84, 1) 77%);
   &__title {
     color: black;
   }
