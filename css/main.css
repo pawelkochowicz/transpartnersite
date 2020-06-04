@@ -392,6 +392,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0; }
+  @media (max-width: 950px) {
+    .header__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .header__title {
   display: -webkit-box;
@@ -412,10 +421,18 @@ body {
     width: 50%;
     height: 100px;
     background-color: #DF4D54; }
+    @media (max-width: 950px) {
+      .header__title--first {
+        width: 100%;
+        margin: 0; } }
   .header__title--second {
     width: 50%;
     height: 100px;
     background-color: #0076FF; }
+    @media (max-width: 950px) {
+      .header__title--second {
+        width: 100%;
+        margin: 0; } }
 
 .header__image {
   margin-top: 100px;
@@ -424,6 +441,9 @@ body {
 .header__slant {
   height: 100px;
   margin-top: -16px; }
+  @media (max-width: 950px) {
+    .header__slant {
+      display: none; } }
 
 .offer__types {
   display: -webkit-box;
@@ -463,6 +483,13 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
+  .offer__image:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
 
 .features {
   display: -webkit-box;
@@ -477,6 +504,18 @@ body {
           justify-content: space-between;
   text-align: center;
   margin: 0 5vw 0 5vw; }
+  @media (max-width: 1100px) {
+    .features {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      -webkit-column-gap: 2vw;
+         -moz-column-gap: 2vw;
+              column-gap: 2vw;
+      row-gap: 2vw; } }
 
 .feature {
   margin: 3vw 0 3vw 0;
@@ -496,6 +535,17 @@ body {
   width: 20vw;
   height: 12vw;
   background-color: #e4e9ec; }
+  .feature:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  @media (max-width: 1100px) {
+    .feature {
+      height: 80%;
+      width: 80%; } }
 
 .about {
   display: -webkit-box;
@@ -527,7 +577,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 400px;
+    height: 300px;
     width: 100%; }
     .about__background--second {
       background-image: url("../assets/img/foto-flota-xl.jpg"); }
@@ -536,6 +586,10 @@ body {
     font-size: 1.8rem;
     line-height: 5rem;
     padding: 0 15vw 0 15vw; }
+    @media (max-width: 1100px) {
+      .about__motto {
+        font-size: 1.5rem;
+        line-height: 4rem; } }
   .about__context {
     width: 70%;
     font-size: 1.1rem;
@@ -567,5 +621,8 @@ body {
   background: linear-gradient(34deg, #0076ff 11%, #df4d54 77%); }
   .footer__title {
     color: black; }
+  @media (max-width: 1100px) {
+    .footer {
+      font-size: 1.3rem; } }
 
 /*# sourceMappingURL=main.css.map */
