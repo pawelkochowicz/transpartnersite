@@ -70,6 +70,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0;
+    @media (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__title {
     display: flex;
@@ -84,11 +88,19 @@ body {
       width: 50%;
       height: 100px;
       background-color: $red;
+      @media (max-width: 950px) {
+        width: 100%;
+        margin: 0;
+      }
     }
     &--second {
       width: 50%;
       height: 100px;
       background-color: $blue;
+      @media (max-width: 950px) {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
   &__image {
@@ -98,6 +110,9 @@ body {
   &__slant {
     height: 100px;
     margin-top: -16px;
+    @media (max-width: 950px) {
+      display: none;
+    }
   }
 }
 
