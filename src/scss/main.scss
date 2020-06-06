@@ -126,7 +126,7 @@ body {
       display: flex;
       flex-direction: column;
       margin: 5vw 8vw 0 8vw;
-     align-items: center;
+      align-items: center;
     }
   }
   &__list {
@@ -144,7 +144,7 @@ body {
     flex-direction: column;
     width: 30%;
     @media (max-width: 750px) {
-    width: 100%;
+      width: 100%;
     }
   }
   &__image {
@@ -263,9 +263,17 @@ body {
   @media (max-width: 1100px) {
     font-size: 1.3rem;
   }
+  @media (max-width: 650px) {
+    height: 60vw;
+  }
+  @media (max-width: 425px) {
+    height: 80vw;
+  }
+  &__container {
   @media (max-width: 750px) {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.1rem;
+  //   display: flex;
+  //   flex-direction: row;
+  //   font-size: 1.1rem;
+  }
   }
 }
