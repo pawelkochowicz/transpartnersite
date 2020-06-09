@@ -93,6 +93,9 @@ body {
         margin: 0;
       }
     }
+    @media (max-width: 410px) {
+      font-size: 1.3rem;
+    }
     &--second {
       width: 50%;
       height: 100px;
@@ -235,6 +238,9 @@ body {
     @media (max-width: 550px) {
       line-height: 3rem;
     }
+    @media(max-width: 380px){
+      font-size: 1.2rem;
+    } 
   }
   &__context {
     width: 70%;
@@ -269,11 +275,8 @@ body {
   @media (max-width: 425px) {
     height: 80vw;
   }
-  &__container {
-  @media (max-width: 750px) {
-  //   display: flex;
-  //   flex-direction: row;
-  //   font-size: 1.1rem;
-  }
+
+  @media (max-width: 350px) {
+    height: 100vw;
   }
 }
