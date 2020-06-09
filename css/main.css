@@ -425,6 +425,9 @@ body {
       .header__title--first {
         width: 100%;
         margin: 0; } }
+  @media (max-width: 410px) {
+    .header__title {
+      font-size: 1.3rem; } }
   .header__title--second {
     width: 50%;
     height: 100px;
@@ -623,6 +626,9 @@ body {
     @media (max-width: 550px) {
       .about__motto {
         line-height: 3rem; } }
+    @media (max-width: 380px) {
+      .about__motto {
+        font-size: 1.2rem; } }
   .about__context {
     width: 70%;
     font-size: 1.1rem;
@@ -664,5 +670,8 @@ body {
   @media (max-width: 425px) {
     .footer {
       height: 80vw; } }
+  @media (max-width: 350px) {
+    .footer {
+      height: 100vw; } }
 
 /*# sourceMappingURL=main.css.map */
