@@ -40,6 +40,22 @@ body {
     display: flex;
     margin-right: 15vh;
     list-style-type: none;
+    @media (max-width: 900px) {
+      display: none;
+      flex-direction: column;
+      &--visible {
+        display: block;
+        font-size: 16px;
+        line-height: 2em;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        list-style-position: inside;
+        margin-top: 85px;
+        flex-direction: column;
+      }
+    }
   }
   &__button {
     padding: 15px 25px;
@@ -58,6 +74,19 @@ body {
     &:hover {
       transition: all 0.1s;
       color: $red;
+    }
+  }
+  &__switcher {
+    font-size: 2rem;
+    background-color: white;
+    line-height: 2em;
+    border: 0;
+    position: fixed;
+    right: 65px;
+    top: 2vh;
+    cursor: pointer;
+    @media (min-width: 901px) {
+      display: none;
     }
   }
 }
