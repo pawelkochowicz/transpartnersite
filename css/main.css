@@ -377,6 +377,20 @@ body {
     border-radius: 4px;
     font-size: 1.125em;
     display: inline-block; }
+    @media (max-width: 900px) {
+      .nav__button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100vw; } }
   .nav__link {
     display: -webkit-box;
     display: -ms-flexbox;
