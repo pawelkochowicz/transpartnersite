@@ -66,7 +66,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.9);
       width: 100vw;
 
     }
@@ -125,11 +125,12 @@ body {
       width: 50%;
       height: 100px;
       background-color: $red;
+      text-align: center;
       @media (max-width: 950px) {
         width: 100%;
         margin: 0;
       }
-    }
+  }
     @media (max-width: 410px) {
       font-size: 1.3rem;
     }
@@ -311,6 +312,7 @@ body {
   }
   @media (max-width: 425px) {
     height: 80vw;
+    font-size: 1rem;
   }
 
   @media (max-width: 350px) {
