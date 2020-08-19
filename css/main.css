@@ -359,8 +359,14 @@ a {
             align-items: center;
     height: 300px;
     width: 100%; }
+    @media (max-width: 900px) {
+      .about__background {
+        background-image: url("../assets/img/foto-onas-sm.jpg"); } }
     .about__background--second {
       background-image: url("../assets/img/foto-flota-xl.jpg"); }
+      @media (max-width: 900px) {
+        .about__background--second {
+          background-image: url("../assets/img/foto-flota-sm.jpg"); } }
   .about__context {
     width: 70%;
     font-size: 1.1rem;
